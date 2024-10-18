@@ -40,7 +40,6 @@ const Testimonials = () => {
         y: 0,
         duration: 1,
         ease: 'power3.out',
-        stagger: 0.2,
         scrollTrigger: {
           trigger: headingRef.current,
           start: 'top 80%', // Trigger when the heading is 80% into the viewport

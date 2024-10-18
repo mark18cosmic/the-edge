@@ -17,7 +17,7 @@ const About = () => {
     // Animation for the About section text
     gsap.fromTo(
       aboutTextRef.current,
-      { opacity: 0, x: -50 },
+      { opacity: 0, x: -100 },
       {
         opacity: 1,
         x: 0,
