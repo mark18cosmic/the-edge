@@ -48,7 +48,7 @@ const Services = () => {
       "-=0.5" // Overlap card animation with the heading
     );
   }, []);
-  
+
 
   return (
     <section className="bg-zinc-900 py-16" id="services">
