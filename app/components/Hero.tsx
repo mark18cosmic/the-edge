@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import heroImage from "@/app/images/pexels-fauxels-3184360.jpg";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {

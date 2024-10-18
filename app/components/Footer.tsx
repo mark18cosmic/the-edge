@@ -3,7 +3,6 @@
 
 import Link from "next/link";
 import { FaFacebookF, FaTwitter, FaInstagram, FaTiktok } from "react-icons/fa";
-import { useState } from "react";
 
 const Footer = () => {
 
