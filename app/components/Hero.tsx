@@ -16,21 +16,21 @@ const Hero = () => {
     tl.fromTo(
       heroTitleRef.current,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1, }
+      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
     )
       .fromTo(
         heroSubtitleRef.current,
         { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 2 },
-        "-=0.5"
+        { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" },
+        "-=0.7" // Start slightly before the title animation ends
       )
       .fromTo(
         heroButtonRef.current,
         { opacity: 0, y: 40 },
-        { opacity: 1, y: 0, duration: 1 },
+        { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
+        "-=0.5" // Overlap with the subtitle animation
       );
   }, []);
-
   return (
     <div
       className="relative w-full h-[100vh] bg-cover bg-center flex items-center justify-center"
