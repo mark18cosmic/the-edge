@@ -26,7 +26,7 @@ const Testimonials = () => {
             </div>
             {/* Testimonial Text */}
             <p className="text-gray-800 leading-relaxed italic mb-4">
-              "The Edge has been instrumental in transforming our business. Their expertise and dedication are unmatched."
+              &quot;The Edge has been instrumental in transforming our business. Their expertise and dedication are unmatched.&quot;
             </p>
             <p className="text-sm text-gray-500">- John Doe, CEO of XYZ Corp</p>
           </div>
@@ -45,7 +45,7 @@ const Testimonials = () => {
             </div>
             {/* Testimonial Text */}
             <p className="text-gray-800 leading-relaxed italic mb-4">
-              "Their innovative approach and attention to detail helped us exceed our growth targets in record time."
+            &quot;Their innovative approach and attention to detail helped us exceed our growth targets in record time.&quot;
             </p>
             <p className="text-sm text-gray-500">- Jane Smith, CFO of ABC Inc</p>
           </div>
@@ -64,7 +64,7 @@ const Testimonials = () => {
             </div>
             {/* Testimonial Text */}
             <p className="text-gray-800 leading-relaxed italic mb-4">
-              "Working with The Edge was a game-changer. Their insights and guidance took our operations to the next level."
+            &quot;Working with The Edge was a game-changer. Their insights and guidance took our operations to the next level.&quot;
             </p>
             <p className="text-sm text-gray-500">- Michael Lee, COO of QRS Enterprises</p>
           </div>

@@ -19,7 +19,7 @@ const Contact = () => {
               Get in Touch
             </h3>
             <p className="text-lg mb-6">
-              Have any questions or inquiries? We'd love to hear from you. Fill
+              Have any questions or inquiries? We&apos;d love to hear from you. Fill
               out the form or reach us directly through the contact information
               below.
             </p>
