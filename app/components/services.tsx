@@ -12,9 +12,30 @@ const Services = () => {
   // Register ScrollTrigger plugin with GSAP
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    // Animation for the service cards
-    gsap.fromTo(
+  
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: headingRef.current,
+        start: 'top 80%',
+        toggleActions: 'play none none none',
+        once: true, // Ensures the animation runs only once
+      },
+    });
+  
+    // Animate the heading
+    tl.fromTo(
+      headingRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+      }
+    );
+  
+    // Animate the service cards
+    tl.fromTo(
       serviceCardsRef.current,
       { opacity: 0, y: 50 },
       {
@@ -22,37 +43,12 @@ const Services = () => {
         y: 0,
         duration: 1,
         ease: 'power3.out',
-        stagger: 0.2, // Stagger the animation for each card
-        scrollTrigger: {
-          trigger: serviceCardsRef.current[0], // Start the trigger when the first card is visible
-          start: 'top 80%', // Trigger when the top of the first card is 80% into the viewport
-          toggleActions: 'play none none none', // Play animation once
-        },
-      }
+        stagger: 0.2, // Stagger each card's animation
+      },
+      "-=0.5" // Overlap card animation with the heading
     );
-
-    // Animation for the heading
-    gsap.fromTo(
-      headingRef.current,
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: headingRef.current,
-          start: 'top 80%', // Trigger when the heading is 80% into the viewport
-          toggleActions: 'play none none none', // Play animation once
-        },
-      }
-    );
-
-    return () => {
-      // Cleanup ScrollTrigger when the component unmounts
-      ScrollTrigger.getAll().forEach(t => t.kill());
-    };
   }, []);
+  
 
   return (
     <section className="bg-zinc-900 py-16" id="services">
