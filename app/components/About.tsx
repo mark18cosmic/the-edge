@@ -81,7 +81,7 @@ const About = () => {
           {/* About Text */}
           <div ref={aboutTextRef}>
             <h2 className="text-5xl font-bold text-gray-800 mb-6">
-              About <span className="text-indigo-600">The Edge</span>
+              About <span className="text-red-600">The Edge</span>
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               At The Edge, we are committed to empowering excellence in the hospitality industry. 
@@ -113,7 +113,7 @@ const About = () => {
       <div className="py-16 bg-white mt-16">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
-            Our <span className="text-indigo-600">Gallery</span>
+            Our <span className="text-red-600">Gallery</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
