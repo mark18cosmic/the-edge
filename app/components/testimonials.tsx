@@ -55,7 +55,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="bg-zinc-900 py-16">
+    <div className="bg-zinc-900 min-h-[50vh] py-16">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 
