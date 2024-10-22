@@ -81,7 +81,7 @@ const Contact = () => {
               </div>
 
               {/* Submit Button */}
-              <Button type="submit" className="w-full bg-red-500 text-white hover:bg-red-600 transition duration-300">
+              <Button type="submit" className="w-full bg-[#d41212] text-white hover:bg-[#b1190D] transition duration-300">
                 Send Message
               </Button>
             </form>
