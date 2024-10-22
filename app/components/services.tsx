@@ -65,7 +65,7 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Hotel Management */}
           <div
-            className="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
+            className="bg-[#2e2e2e] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
             ref={(el) => { serviceCardsRef.current[0] = el; }}
           >
             <div className="mb-4 text-indigo-400 text-4xl">
@@ -79,7 +79,7 @@ const Services = () => {
 
           {/* Restaurant Management */}
           <div
-            className="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
+            className="bg-[#2e2e2e] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
             ref={(el) => { serviceCardsRef.current[1] = el; }}
           >
             <div className="mb-4 text-indigo-400 text-4xl">
@@ -93,7 +93,7 @@ const Services = () => {
 
           {/* Event Planning */}
           <div
-            className="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
+            className="bg-[#2e2e2e] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
             ref={(el) => { serviceCardsRef.current[2] = el; }}
           >
             <div className="mb-4 text-indigo-400 text-4xl">
