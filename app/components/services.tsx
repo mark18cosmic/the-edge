@@ -68,7 +68,7 @@ const Services = () => {
             className="bg-[#2e2e2e] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
             ref={(el) => { serviceCardsRef.current[0] = el; }}
           >
-            <div className="mb-4 text-indigo-400 text-4xl">
+            <div className="mb-4 text-[#555555] text-4xl">
               <FaConciergeBell />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Hotel Management</h3>
@@ -82,7 +82,7 @@ const Services = () => {
             className="bg-[#2e2e2e] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
             ref={(el) => { serviceCardsRef.current[1] = el; }}
           >
-            <div className="mb-4 text-indigo-400 text-4xl">
+            <div className="mb-4 text-[#555555] text-4xl">
               <FaUtensils />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Restaurant Management</h3>
@@ -96,7 +96,7 @@ const Services = () => {
             className="bg-[#2e2e2e] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
             ref={(el) => { serviceCardsRef.current[2] = el; }}
           >
-            <div className="mb-4 text-indigo-400 text-4xl">
+            <div className="mb-4 text-[#555555] text-4xl">
               <FaCalendarAlt />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Event Planning</h3>
