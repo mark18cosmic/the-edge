@@ -39,26 +39,6 @@ export default function Clients() {
             }
         );
 
-        // Animate the service cards
-        cardRefs.current.forEach((card, index) => {
-            gsap.fromTo(
-                card,
-                { opacity: 0, y: 50 },
-                {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.6,
-                    ease: 'power3.out',
-                    scrollTrigger: {
-                        trigger: card,
-                        start: 'top 80%',
-                        toggleActions: 'play none none none',
-                        once: true, // Ensures the animation runs only once for each card
-                    },
-                }
-            );
-        });
-
         return () => {
             ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
         };
