@@ -57,11 +57,11 @@ const Testimonials = () => {
 
   return (
     <div className="bg-zinc-900 py-10">
-          <Clients />
+      <Clients />
 
       <div className="container mx-auto px-4">
         {/* Heading */}
-        <h2 
+        <h2
           className="text-4xl text-white font-bold text-center mb-12"
           ref={headingRef}
         >
@@ -69,49 +69,34 @@ const Testimonials = () => {
         </h2>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Testimonial 1 */}
-          <div
-            className="bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
-            ref={(el) => { testimonialCardsRef.current[0] = el; }}
-          >
-            {/* Avatar */}
-            <div className="w-16 h-16 mx-auto mb-4">
-              <Image
-                src="/images/avatar1.jpg" // Replace with actual path
-                alt="John Doe Avatar"
-                className="rounded-full"
-                width={64}
-                height={64}
-              />
-            </div>
-            {/* Testimonial Text */}
-            <p className="text-gray-800 leading-relaxed italic mb-4">
-              &quot;The Edge has been instrumental in transforming our business. Their expertise and dedication are unmatched.&quot;
-            </p>
-            <p className="text-sm text-gray-500">- John Doe, CEO of XYZ Corp</p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-8">
+
 
           {/* Testimonial 2 */}
           <div
             className="bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
             ref={(el) => { testimonialCardsRef.current[1] = el; }}
           >
-            {/* Avatar */}
-            <div className="w-16 h-16 mx-auto mb-4">
-              <Image
-                src="/images/avatar2.jpg" // Replace with actual path
-                alt="Jane Smith Avatar"
-                className="rounded-full"
-                width={64}
-                height={64}
-              />
-            </div>
             {/* Testimonial Text */}
             <p className="text-gray-800 leading-relaxed italic mb-4">
-            &quot;Their innovative approach and attention to detail helped us exceed our growth targets in record time.&quot;
+              &quot;The quality of services from THE EDGE remains consistent, ensuring smooth operations at our resorts.&quot;
             </p>
-            <p className="text-sm text-gray-500">- Jane Smith, CFO of ABC Inc</p>
+            <p className="text-sm text-gray-500">- Corporate Director of Human Resources
+              Universal Enterprises Pvt. Ltd
+            </p>
+          </div>
+          {/* Testimonial 1 */}
+          <div
+            className="bg-white p-8 rounded-lg shadow-lg items-center justify-center transform transition duration-300 hover:scale-105"
+            ref={(el) => { testimonialCardsRef.current[0] = el; }}
+          >
+            {/* Testimonial Text */}
+            <p className="text-gray-800 leading-relaxed italic mb-4">
+              &quot;We have been recruiting from The Edge almost from the inception of our company, and their service is reliable, consistent and prompt,&quot;
+            </p>
+            <p className="text-sm text-gray-500">- Mohamed Khaleel,
+              Managing Director of Reollo Group. Reollo Investments & Manta Air,
+              Director of Kandinma Holdings Pvt. Ltd</p>
           </div>
 
           {/* Testimonial 3 */}
@@ -119,23 +104,15 @@ const Testimonials = () => {
             className="bg-white p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
             ref={(el) => { testimonialCardsRef.current[2] = el; }}
           >
-            {/* Avatar */}
-            <div className="w-16 h-16 mx-auto mb-4">
-              <Image
-                src="/images/avatar3.jpg" // Replace with actual path
-                alt="Michael Lee Avatar"
-                className="rounded-full"
-                width={64}
-                height={64}
-              />
-            </div>
             {/* Testimonial Text */}
             <p className="text-gray-800 leading-relaxed italic mb-4">
-            &quot;Working with The Edge was a game-changer. Their insights and guidance took our operations to the next level.&quot;
+              &quot;We have relied on THE EDGE for recruitment across our resorts, and their professionalism is unmatched.&quot;
             </p>
-            <p className="text-sm text-gray-500">- Michael Lee, COO of QRS Enterprises</p>
+            <p className="text-sm text-gray-500 ">- Ibrahim Mohamed
+              Director of Human Resources, Villa Group</p>
           </div>
         </div>
+
       </div>
     </div>
   );
