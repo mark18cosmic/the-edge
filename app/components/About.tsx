@@ -116,7 +116,7 @@ const About = () => {
             Our <span className="text-[#d41212]">Gallery</span>
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* Gallery Images */}
             {[
               "/images/pexels-fauxels-3184360.jpg",
