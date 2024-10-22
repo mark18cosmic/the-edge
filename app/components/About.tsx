@@ -79,7 +79,7 @@ const About = () => {
       <section id="about" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 flex items-center justify-center md:p-10">
           {/* About Section */}
-          <div className="max-w-3xl text-center">
+          <div className="max-w-3xl text-center" ref={aboutTextRef}>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
               About <span className="">The Edge</span>
             </h2>
