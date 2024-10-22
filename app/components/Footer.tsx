@@ -17,13 +17,13 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <Link href="https://www.facebook.com" target="_blank" className="text-white hover:text-gray-300">
+          <Link href="https://www.facebook.com/theedgemaldives/" target="_blank" className="text-white hover:text-gray-300">
             <FaFacebookF size={20} />
           </Link>
           <Link href="https://www.twitter.com" target="_blank" className="text-white hover:text-gray-300">
             <FaTwitter size={20} />
           </Link>
-          <Link href="https://www.instagram.com" target="_blank" className="text-white hover:text-gray-300">
+          <Link href="https://www.instagram.com/theedge.mv?igsh=YmJleTF3cW43NnVv" target="_blank" className="text-white hover:text-gray-300">
             <FaInstagram size={20} />
           </Link>
           <Link href="https://www.tiktok.com" target="_blank" className="text-white hover:text-gray-300">

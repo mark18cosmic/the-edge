@@ -5,6 +5,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import WhyUs from "./WhyUs";
+import Team from "./team";
 
 const About = () => {
   const aboutTextRef = useRef(null);
@@ -76,12 +77,10 @@ const About = () => {
 
   return (
     <>
-        <section id="about" className="py-20 bg-gray-50">
-      <div className="container height-[50vh] mx-auto px-4">
-        {/* About Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* About Text */}
-          <div ref={aboutTextRef} className="">
+      <section id="about" className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 flex items-center justify-center md:p-10">
+          {/* About Section */}
+          <div className="max-w-3xl text-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
               About <span className="">The Edge</span>
             </h2>
@@ -92,22 +91,11 @@ const About = () => {
               As the global labor market evolves, finding the right talent has become increasingly challenging, particularly with the rise of skill shortages. At THE EDGE, we help our clients navigate these challenges through effective talent acquisition and team development, ensuring they maintain their competitive edge in the luxury hospitality sector.
             </p>
           </div>
-
-          {/* About Image */}
-          <div className="w-full h-full" ref={aboutImageRef}>
-            <Image
-              src="/images/pexels-fauxels-3184360.jpg"
-              alt="About The Edge"
-              className="w-full h-auto rounded-lg shadow-lg transform transition duration-500 hover:scale-105"
-              width={600}
-              height={400}
-            />
-          </div>
         </div>
-      </div>
-      {/* Why Us Section */}
-      <WhyUs />
-    </section>
+        {/* Why Us Section */}
+        <WhyUs />
+        <Team />
+      </section>
     </>
   );
 };

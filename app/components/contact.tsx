@@ -26,15 +26,15 @@ const Contact = () => {
 
             <div className="mb-4">
               <h4 className="font-bold">Phone</h4>
-              <p>+1 123 456 7890</p>
+              <p>+960 331-6337</p>
             </div>
             <div className="mb-4">
               <h4 className="font-bold">Email</h4>
-              <p>info@theedge.com</p>
+              <p>recruitment@edgemaldives.com</p>
             </div>
             <div className="mb-4">
               <h4 className="font-bold">Address</h4>
-              <p>123 Recruitment St, City, Country</p>
+              <p>Orchid Magu 02-17, STO Trade Center, Male' 20188</p>
             </div>
           </div>
 

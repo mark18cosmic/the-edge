@@ -124,7 +124,7 @@ const FAQ = () => {
         <div className="height-[50vh] bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
-              Our <span className="text-[#d41212]">Gallery</span>
+              Our Gallery
             </h2>
 
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
