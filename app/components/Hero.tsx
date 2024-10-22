@@ -30,6 +30,9 @@ const Hero = () => {
         { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
         "-=0.5" // Overlap with the subtitle animation
       );
+
+      console.log(window.innerWidth);
+
   }, []);
   return (
     <div
