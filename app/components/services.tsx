@@ -12,7 +12,7 @@ const Services = () => {
   // Register ScrollTrigger plugin with GSAP
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-  
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: headingRef.current,
@@ -21,7 +21,7 @@ const Services = () => {
         once: true, // Ensures the animation runs only once
       },
     });
-  
+
     // Animate the heading
     tl.fromTo(
       headingRef.current,
@@ -33,7 +33,7 @@ const Services = () => {
         ease: 'power3.out',
       }
     );
-  
+
     // Animate the service cards
     tl.fromTo(
       serviceCardsRef.current,
@@ -54,8 +54,8 @@ const Services = () => {
     <section className="bg-zinc-900 pt-10" id="services">
       <div className="container mx-auto px-4 text-center">
         {/* Heading */}
-        <h2 
-          className="text-4xl font-bold text-white mb-12" 
+        <h2
+          className="text-4xl font-bold text-white mb-12"
           ref={headingRef}
         >
           Our Services
@@ -71,10 +71,9 @@ const Services = () => {
             <div className="mb-4 text-[#555555] text-4xl">
               <FaConciergeBell />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-white">Hotel Management</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-white">Arrangement of Direct Interview </h3>
             <p className="text-gray-300">
-              We offer comprehensive hotel management services to help streamline your operations, from front desk to housekeeping.
-            </p>
+              We arrange direct interviews with potential clients via Phone, Google Meet, Whatsapp or even in person.</p>
           </div>
 
           {/* Restaurant Management */}
@@ -85,10 +84,9 @@ const Services = () => {
             <div className="mb-4 text-[#555555] text-4xl">
               <FaUtensils />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-white">Restaurant Management</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-white">Handle Recruitment Formalities</h3>
             <p className="text-gray-300">
-              Our restaurant management services provide expert guidance on everything from menu development to guest satisfaction.
-            </p>
+              We handle formalities such as Work Permits, Immigration, Airport Reception and Transfers.</p>
           </div>
 
           {/* Event Planning */}
@@ -99,10 +97,9 @@ const Services = () => {
             <div className="mb-4 text-[#555555] text-4xl">
               <FaCalendarAlt />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-white">Event Planning</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-white">Comprehensive HR Management Solutions</h3>
             <p className="text-gray-300">
-              We specialize in planning and executing unforgettable events, tailored to meet your specific needs.
-            </p>
+              We provide comprehensive solutions for all your HR management needs available for outsourced services.</p>
           </div>
         </div>
       </div>
