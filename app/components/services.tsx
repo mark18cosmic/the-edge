@@ -51,7 +51,7 @@ const Services = () => {
 
 
   return (
-    <section className="bg-zinc-900 min-h-[50vh] py-16" id="services">
+    <section className="bg-zinc-900 pt-10" id="services">
       <div className="container mx-auto px-4 text-center">
         {/* Heading */}
         <h2 

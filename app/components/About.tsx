@@ -4,6 +4,8 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import WhyUs from "./WhyUs";
+import Clients from "./clients";
 
 const About = () => {
   const aboutTextRef = useRef(null);
@@ -74,25 +76,21 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <>
+        <section id="about" className="py-20 bg-gray-50">
+      <div className="container height-[50vh] mx-auto px-4">
         {/* About Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* About Text */}
-          <div ref={aboutTextRef}>
-            <h2 className="text-5xl font-bold text-gray-800 mb-6">
-              About <span className="text-[#d41212]">The Edge</span>
+          <div ref={aboutTextRef} className="">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
+              About <span className="">The Edge</span>
             </h2>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              At The Edge, we are committed to empowering excellence in the hospitality industry. 
-              With years of experience, we specialize in connecting talented individuals with 
-              leading employers. Our focus is on creating opportunities for both local and 
-              international job seekers, making us the trusted partner for recruitment solutions.
+            <p className="text-lg text-justify text-gray-600 mb-6 leading-relaxed">
+              Established in 1996, THE EDGE Pvt. Ltd. has been committed to providing recruitment solutions that give our clients in the hospitality industry a distinct competitive advantage. We achieve this through fast, efficient recruitment services, access to specialized talent, cost-effective processes, and strategic insights, all aimed at upholding high service standards and enhancing the guest experience.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Our mission is to ensure that every placement is a perfect match, contributing to the 
-              long-term success of both candidates and companies. Join us at The Edge, where we 
-              redefine the future of hospitality recruitment.
+            <p className="text-lg text-justify text-gray-600 leading-relaxed">
+              As the global labor market evolves, finding the right talent has become increasingly challenging, particularly with the rise of skill shortages. At THE EDGE, we help our clients navigate these challenges through effective talent acquisition and team development, ensuring they maintain their competitive edge in the luxury hospitality sector.
             </p>
           </div>
 
@@ -108,44 +106,10 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* Gallery Section */}
-      <div className="py-16 bg-white mt-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
-            Our <span className="text-[#d41212]">Gallery</span>
-          </h2>
-
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {/* Gallery Images */}
-            {[
-              "/images/pexels-fauxels-3184360.jpg",
-              "/images/pexels-fauxels-3184360.jpg",
-              "/images/pexels-fauxels-3184360.jpg",
-              "/images/pexels-fauxels-3184360.jpg",
-              "/images/pexels-fauxels-3184360.jpg",
-              "/images/pexels-fauxels-3184360.jpg",
-            ].map((src, index) => (
-              <div
-                key={index}
-                className="relative w-full h-64"
-                ref={(el) => {
-                  if (el) galleryImagesRef.current[index] = el;
-                }}
-              >
-                <Image
-                  src={src}
-                  alt={`Gallery Image ${index + 1}`}
-                  className="rounded-lg shadow-md object-cover transform transition duration-500 hover:scale-105"
-                  layout="fill"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* Why Us Section */}
+      <WhyUs />
     </section>
+    </>
   );
 };
 

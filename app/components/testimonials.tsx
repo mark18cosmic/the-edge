@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Clients from './clients';
 
 const Testimonials = () => {
   const testimonialCardsRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -55,7 +56,9 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="bg-zinc-900 min-h-[50vh] py-16">
+    <div className="bg-zinc-900 py-10">
+          <Clients />
+
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 

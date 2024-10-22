@@ -4,10 +4,13 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 const FAQ = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const faqItemsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const galleryImagesRef = useRef<(HTMLDivElement | null)[]>([]);
+
 
   const faqs = [
     {
@@ -51,6 +54,22 @@ const FAQ = () => {
         },
       }
     );
+    gsap.fromTo(
+      galleryImagesRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.2,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: galleryImagesRef.current[0], // Trigger on first image
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
 
     // Animation for each accordion item to fade in when it appears
     faqItemsRef.current.forEach((item, index) => {
@@ -80,35 +99,80 @@ const FAQ = () => {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="max-w-4xl mx-auto my-20 px-4"
-    >
-      {/* Section Heading */}
-      <h2 className="text-4xl font-extrabold text-center mb-10 text-zinc-900 relative">
-        Frequently Asked Questions
-      </h2>
+   
+   <><section className="container mx-auto my-20 px-4">
+      {/* Gallery Section */}
+      <div className=" height-[50vh] bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">
+            Our <span className="text-[#d41212]">Gallery</span>
+          </h2>
 
-      {/* Accordion Component */}
-      <Accordion type="multiple" className="space-y-6">
-        {faqs.map((faq, index) => (
-          <AccordionItem
-            key={index}
-            value={`faq-${index}`}
-            className="border border-gray-200 rounded-lg"
-            ref={el => {faqItemsRef.current[index] = el}} // Reference each accordion item
-          >
-            <AccordionTrigger className="text-xl font-semibold py-3 px-5 hover:bg-gray-100 transition-colors rounded-lg">
-              {faq.question}
-            </AccordionTrigger>
-            <AccordionContent className="px-5 py-3 text-gray-700">
-              {faq.answer}
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </section>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {/* Gallery Images */}
+            {[
+              "/images/pexels-fauxels-3184360.jpg",
+              "/images/pexels-fauxels-3184360.jpg",
+              "/images/pexels-fauxels-3184360.jpg",
+              "/images/pexels-fauxels-3184360.jpg",
+              "/images/pexels-fauxels-3184360.jpg",
+              "/images/pexels-fauxels-3184360.jpg",
+            ]
+              // If screen is small, show only 4 images
+              .slice(0, window.innerWidth <= 640 ? 4 : 6)
+              .map((src, index) => (
+                <div
+                  key={index}
+                  className="relative w-full h-64"
+                  ref={(el) => {
+                    if (el) galleryImagesRef.current[index] = el;
+                  }}
+                >
+                  <Image
+                    src={src}
+                    alt={`Gallery Image ${index + 1}`}
+                    className="rounded-lg shadow-md object-cover transform transition duration-500 hover:scale-105"
+                    layout="fill"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  />
+                </div>
+              ))}
+          </div>
+
+        </div>
+      </div>
+      </section>
+
+      <section
+        ref={sectionRef}
+        className="max-w-4xl mx-auto my-20 px-4"
+      >
+        {/* Section Heading */}
+        <h2 className="text-4xl font-extrabold text-center mb-10 text-zinc-900 relative">
+          Frequently Asked Questions
+        </h2>
+
+        {/* Accordion Component */}
+        <Accordion type="multiple" className="space-y-6">
+          {faqs.map((faq, index) => (
+            <AccordionItem
+              key={index}
+              value={`faq-${index}`}
+              className="border border-gray-200 rounded-lg"
+              ref={el => { faqItemsRef.current[index] = el }} // Reference each accordion item
+            >
+              <AccordionTrigger className="text-xl font-semibold py-3 px-5 hover:bg-gray-100 transition-colors rounded-lg">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="px-5 py-3 text-gray-700">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
+      </>
   );
-};
+}
 
 export default FAQ;
