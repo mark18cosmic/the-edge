@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef } from 'react';
-import { FaConciergeBell, FaUtensils, FaCalendarAlt } from 'react-icons/fa'; // Icons for each service
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import { HiOutlineChatAlt2, HiOutlineClipboardList, HiScale } from 'react-icons/hi';
 const Services = () => {
   const serviceCardsRef = useRef<(HTMLDivElement | null)[]>([]);
   const headingRef = useRef<HTMLHeadingElement | null>(null);
@@ -69,8 +68,7 @@ const Services = () => {
             ref={(el) => { serviceCardsRef.current[0] = el; }}
           >
             <div className="mb-4 text-[#555555] text-4xl">
-              <FaConciergeBell />
-            </div>
+            <HiOutlineChatAlt2 />            </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Arrangement of Direct Interview </h3>
             <p className="text-gray-300">
               We arrange direct interviews with potential clients via Phone, Google Meet, Whatsapp or even in person.</p>
@@ -82,8 +80,7 @@ const Services = () => {
             ref={(el) => { serviceCardsRef.current[1] = el; }}
           >
             <div className="mb-4 text-[#555555] text-4xl">
-              <FaUtensils />
-            </div>
+            <HiScale />            </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Handle Recruitment Formalities</h3>
             <p className="text-gray-300">
               We handle formalities such as Work Permits, Immigration, Airport Reception and Transfers.</p>
@@ -95,7 +92,7 @@ const Services = () => {
             ref={(el) => { serviceCardsRef.current[2] = el; }}
           >
             <div className="mb-4 text-[#555555] text-4xl">
-              <FaCalendarAlt />
+              <HiOutlineClipboardList />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Comprehensive HR Management Solutions</h3>
             <p className="text-gray-300">
