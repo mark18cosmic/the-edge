@@ -5,7 +5,6 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import WhyUs from "./WhyUs";
-import Clients from "./clients";
 
 const About = () => {
   const aboutTextRef = useRef(null);
