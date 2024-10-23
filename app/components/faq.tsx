@@ -166,7 +166,7 @@ const FAQ = () => {
         className="max-w-4xl mx-auto my-20 px-4"
       >
         {/* Section Heading */}
-        <h2 className="text-4xl font-extrabold text-center mb-10 text-zinc-900 relative">
+        <h2 className="text-4xl font-bold text-center mb-10 text-gray-800 relative">
           Frequently Asked Questions
         </h2>
 
@@ -179,7 +179,7 @@ const FAQ = () => {
               className="border border-gray-200 rounded-lg"
               ref={el => { faqItemsRef.current[index] = el }} // Reference each accordion item
             >
-              <AccordionTrigger className="text-xl font-semibold py-3 px-5 hover:bg-gray-100 transition-colors rounded-lg">
+              <AccordionTrigger className="text-xl font-semibold text-gray-800 py-3 px-5 hover:bg-gray-100 transition-colors rounded-lg">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="px-5 py-3 text-gray-700">
