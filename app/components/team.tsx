@@ -70,7 +70,7 @@ const OurTeam = () => {
                     {/* Image Section */}
                     <div className="w-full h-full" ref={imageSectionRef}>
                         <Image
-                            src="/images/pexels-fauxels-3184360.jpg"
+                            src="/images/pexels-photo-3183183.webp"
                             alt="Our Team"
                             className="w-full h-auto rounded-lg shadow-lg transform transition duration-500 hover:scale-105"
                             width={600}

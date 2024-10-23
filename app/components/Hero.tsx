@@ -38,7 +38,7 @@ const Hero = () => {
     <div
       className="relative w-full h-[100vh] bg-cover bg-center flex items-center justify-center"
       style={{
-        backgroundImage: "url('/images/pexels-fauxels-3184360.jpg')",
+        backgroundImage: "url('/images/photo_2024-10-23_05-16-59.jpg')",
         filter: "grayscale(100%)",
       }}
       aria-label="Hero Section"
