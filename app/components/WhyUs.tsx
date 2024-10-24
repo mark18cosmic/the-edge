@@ -52,7 +52,7 @@ const WhyUs = () => {
     return (
         <div className="container height-[50vh] mx-auto py-16 px-4">
             {/* Why us Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
                 {/* why us Image */}
                 <div className="w-full h-full" ref={aboutImageRef}>
                     <Image

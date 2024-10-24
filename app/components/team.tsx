@@ -53,7 +53,7 @@ const OurTeam = () => {
         <section id="our-team" className="py-20 bg-gray-50">
             <div className="container mx-auto px-4 max-w-7xl">
                 {/* Grid layout */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
                     {/* Text Section */}
                     <div ref={textSectionRef}>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
