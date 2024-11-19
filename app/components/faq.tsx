@@ -130,12 +130,15 @@ const FAQ = () => {
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {/* Gallery Images */}
               {[
-                "/images/pexels-fauxels-3184360.jpg",
-                "/images/pexels-fauxels-3184360.jpg",
-                "/images/pexels-fauxels-3184360.jpg",
-                "/images/pexels-fauxels-3184360.jpg",
-                "/images/pexels-fauxels-3184360.jpg",
-                "/images/pexels-fauxels-3184360.jpg",
+                "/images/g/photo_1_2024-11-19_06-08-49.jpg",
+                "/images/g/photo_2_2024-11-19_06-08-49.jpg",
+                "/images/g/photo_3_2024-11-19_06-08-49.jpg",
+                "/images/g/photo_4_2024-11-19_06-08-49.jpg",
+                "/images/g/photo_5_2024-11-19_06-08-49.jpg",
+                "/images/g/photo_6_2024-11-19_06-08-49.jpg",
+                "/images/g/photo_7_2024-11-19_06-08-49.jpg",
+
+               
               ]
                 .slice(0, imageCount) // Use state to determine the number of images
                 .map((src, index) => (

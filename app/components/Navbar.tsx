@@ -6,12 +6,12 @@ import Image from "next/image";
 
 const links = [
   {
-    href: "/#services",
-    label: "Our Services",
-  },
-  {
     href: "/#about",
     label: "About",
+  },
+  {
+    href: "/#services",
+    label: "Our Services",
   },
   {
     href: "/#Contact",
@@ -50,7 +50,7 @@ export default function Navbar() {
           className="text-white text-2xl font-extrabold tracking-wide hover:text-gray-300 transition duration-300 ease-in-out"
         >
           <Image
-            src="/images/The Edge Logo White.png"
+            src="/images/Logo.jpg"
             className="object-contain h-24 w-auto"
             alt="The Edge"
             width={200}
