@@ -50,7 +50,7 @@ export default function Navbar() {
           className="text-white text-2xl font-extrabold tracking-wide hover:text-gray-300 transition duration-300 ease-in-out"
         >
           <Image
-            src="/images/logo.jpg"
+            src="/images/logo.png"
             className="object-contain h-24 w-auto"
             alt="The Edge"
             width={200}

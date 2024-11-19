@@ -65,9 +65,9 @@ const Hero = () => {
         <Button
           ref={heroButtonRef}
           className="mt-8 px-8 py-4 text-lg font-bold text-black bg-white hover:bg-gray-200 rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
-          aria-label="Learn More"
+          aria-label="Contact Us"
           onClick={() => {
-            const targetSection = document.getElementById("about"); // Replace with your target section's ID
+            const targetSection = document.getElementById("Contact"); // Replace with your target section's ID
             if (targetSection) {
               targetSection.scrollIntoView({ behavior: "smooth" });
             }
