@@ -7,7 +7,7 @@ import Image from "next/image";
 const links = [
   {
     href: "/#about",
-    label: "About",
+    label: "About Us",
   },
   {
     href: "/#services",
