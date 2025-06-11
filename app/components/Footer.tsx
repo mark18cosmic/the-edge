@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaTiktok, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
 
@@ -19,6 +19,9 @@ const Footer = () => {
         <div className="flex space-x-4 mt-4 md:mt-0">
           <Link href="https://www.facebook.com/theedgemaldives/" target="_blank" className="text-white hover:text-gray-300">
             <FaFacebookF size={20} />
+          </Link>
+          <Link href="https://www.linkedin.com/company/the-edge-pvt-ltd/posts/?feedView=all">
+          <FaLinkedinIn size={20}/>
           </Link>
           <Link href="https://www.twitter.com" target="_blank" className="text-white hover:text-gray-300">
             <FaTwitter size={20} />
