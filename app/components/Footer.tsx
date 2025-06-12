@@ -20,7 +20,7 @@ const Footer = () => {
           <Link href="https://www.facebook.com/theedgemaldives/" target="_blank" className="text-white hover:text-gray-300">
             <FaFacebookF size={20} />
           </Link>
-          <Link href="https://www.linkedin.com/company/the-edge-pvt-ltd/posts/?feedView=all">
+          <Link href="https://www.linkedin.com/company/the-edge-pvt-ltd/posts/?feedView=all" className="text-white hover:text-gray-300">
           <FaLinkedinIn size={20}/>
           </Link>
           <Link href="https://www.twitter.com" target="_blank" className="text-white hover:text-gray-300">
